@@ -30,3 +30,5 @@ cd ../ && git clone https://github.com/certbot/certbot && cd certbot
 ```bash
 ./letsencrypt-auto renew --force-renew --manual --manual-auth-hook ../certbot-dns-pddyandex/authenticator.sh --manual-cleanup-hook ../certbot-dns-pddyandex/cleanup.sh --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
 ```
+
+P.s. Большая задержка после вставки DNS-записи связана с тем, что Яндекс не сразу отдает обновленные данные серверу Let's encrypt-a.. приходится ждать
