@@ -27,5 +27,5 @@ if [ -n "${RECORD_ID}" ]; then
 fi
 
 if [ "$COUNT_RECORD" -eq "0" ];then
-	rm -f /tmp/CERTBOT_count/
+	rm -rf /tmp/CERTBOT_count/
 fi
