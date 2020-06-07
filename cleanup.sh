@@ -28,4 +28,5 @@ fi
 
 if [ "$COUNT_RECORD" -eq "0" ];then
 	rm -rf /tmp/CERTBOT_count/
+	rm -rf /tmp/CERTBOT_$CERTBOT_DOMAIN/
 fi
