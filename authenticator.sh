@@ -33,7 +33,4 @@ let "COUNT_RECORD += 1"
 echo $COUNT_RECORD > /tmp/CERTBOT_count/COUNT_RECORD
 
 # Sleep to make sure the change has time to propagate over to DNS
-
-if [ "$COUNT_RECORD" -ne "1" ];then
-	sleep 600
-fi
+sleep 600
